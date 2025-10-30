@@ -9,8 +9,8 @@ import sys
 import time
 import argparse
 from datetime import datetime, timedelta
-from data_collection import initialize_reddit, fetch_sector_data
-from sentiment_analysis import train_sector_model
+from data_collection import initialize_reddit
+from sentiment_analysis import train_sector_model, fetch_sector_data
 from config import SECTOR_CONFIG, MAX_POSTS_PER_SECTOR
 from visualization import generate_model_comparison_plots
 
