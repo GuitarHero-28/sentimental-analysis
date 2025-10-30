@@ -45,6 +45,7 @@ pip install -r requirements.txt```
 ```
 
 **4. Configure the Project Before running, you may need to update the config.py file with your own settings, such as:**
+<br>
 Reddit API credentials 
 <br>
 File paths 
