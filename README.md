@@ -32,3 +32,22 @@ The core idea is to bridge the gap between unstructured, noisy social media chat
 git clone [https://github.com/GuitarHero-28/sentimental-analysis.git](https://github.com/GuitarHero-28/sentimental-analysis.git)
 cd sentimental-analysis
 
+**2. Set Up a Virtual Environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+**3. Install Dependencies All required libraries are listed in the requirements.txt file.**
+```bash
+pip install -r requirements.txt
+
+**4. Configure the Project Before running, you may need to update the config.py file with your own settings, such as:**
+Reddit API credentials
+File paths
+Subreddits to target
+ETF ticker symbols
+
+
+
+
+
