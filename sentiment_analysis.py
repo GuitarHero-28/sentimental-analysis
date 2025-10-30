@@ -31,8 +31,11 @@ def fetch_sector_data(sector_name, companies, etf_ticker, subreddit_str,
         query_parts.append(f"${company['ticker']}")
     search_query = " OR ".join(query_parts)
 
+    # Convert datetime objects to string format for fetch_reddit_data
+    start_date_str = start_date.strftime('%Y-%m-%d')
+    end_date_str = end_date.strftime('%Y-%m-%d')
     reddit_posts = fetch_reddit_data(reddit_instance, subreddit_str, search_query,
-                                    start_date, end_date, max_posts)
+                                    start_date_str, end_date_str, max_posts)
                                     
     if reddit_posts.empty:
         print(f"No relevant Reddit posts found for {sector_name} sector companies in r/{subreddit_str}. Skipping analysis.")
